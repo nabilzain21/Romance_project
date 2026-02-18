@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unlocked level 25</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lottie -->
+  <script
+    src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+    type="module">
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= HERO ================= -->
+  <section class="min-h-screen flex items-center justify-center px-6 text-center">
+    <div class="max-w-xl">
+      <p class="text-sm uppercase tracking-widest text-[#005F02] mb-4">
+        A special message for you
+      </p>
+     <h1 class="text-4xl md:text-5xl font-semibold mb-6 text-center">
+        <span>Someone made this</span><br />
+
+        <span class="inline-flex items-center justify-center gap-2">
+            just for you
+            <img
+            src="assets/love.png"
+            alt="love"
+            class="w-8 h-8 inline-block"
+            />
+        </span>
+    </h1>
+
+
+      <button class="mt-6 px-8 py-3 bg-[#B0CE88] text-white rounded-full hover:bg-[#8BAE66] transition">
+        <a href="#birthday">Open Slowly</a>
+      </button>
+    </div>
+  </section>
+
+    <!-- ================= BIRTHDAY ================= -->
+    <section 
+        id="birthday"
+        class="relative h-screen w-full flex flex-col items-center justify-center bg-white px-6 text-center"
+    >
+        <div class="max-w-2xl">
+            <h2
+                id="welcoming"
+                class="text-4xl md:text-5xl font-bold text-[#8BAE66] mb-6 flex flex-col items-center"
+            >
+                <span>Happy Birthday My Lovely</span>
+
+                <img
+                    src="assets/birthday-cake.png"
+                    alt="birthday-cake"
+                    class="w-32 md:w-40 mt-6"
+                />
+            </h2>
+
+            <p class="text-lg max-w-xl mx-auto mb-8">
+                Today isn’t just about your birthday.  
+                It’s about celebrating someone who makes life more beautiful.
+            </p>
+
+            <button
+                class="px-8 py-3 bg-[#8BAE66] text-white rounded-full
+                    hover:bg-[#BCD9A2] transition duration-300"
+            >
+                <a href="#video1">Blow the candle</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- ========= VIDEO ========= -->
+    <section id="video1" class="relative h-screen w-full overflow-hidden">
+    <video 
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay 
+        muted 
+        loop 
+        playsinline>
+        <source src="assets/videojalan2.mp4" type="video/mp4">
+    </video>
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-black/60"></div>
+
+    <!-- CONTENT -->
+    <div class="relative z-10 h-full flex items-center justify-center text-center px-6">
+        <h1 
+        id="cinematicText"
+        class="text-white text-5xl font-light tracking-wide drop-shadow-xl opacity-0 transition-all duration-1500">
+            You are already 25 years old
+        </h1>
+    </div>
+    </section>
+
+
+
+
+   <!-- ================= UNLOCK POPUP ================= -->
+    <div
+    id="unlockPopup"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm transition-opacity duration-700"
+    >
+    <div
+        class="bg-white rounded-2xl shadow-xl px-10 py-12 text-center max-w-sm w-full"
+    >
+        <h2 class="text-2xl font-semibold mb-6">
+        Ready to unlock something special? 🎁
+        </h2>
+
+        <!-- BUTTON -->
+        <button
+        id="unlockBtn"
+        class="px-8 py-4 text-white font-semibold rounded-full
+                bg-[#8BAE66]
+                hover:scale-105 transition-all duration-300"
+        >
+        🔓 Unlock Level 25!
+        </button>
+
+        <!-- CONFETTI (HIDDEN INITIALLY) -->
+        <div
+        id="confetti"
+        class="mt-8 opacity-0 scale-90 transition-all duration-700"
+        >
+        <dotlottie-wc
+        src="https://lottie.host/6cc9fae1-6a75-4da4-ab8c-8769d3654bc4/QrnRIU7eTj.lottie"
+        style="width: 300px;height: 300px"
+        autoplay
+        loop
+        ></dotlottie-wc>
+        </div>
+    </div>
+    </div>
+
+
+
+  <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
