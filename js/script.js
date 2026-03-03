@@ -2,9 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const unlockBtn = document.getElementById("unlockBtn");
   const popup = document.getElementById("unlockPopup");
   const confetti = document.getElementById("confetti");
+  const music = document.getElementById("bgMusic");
 
   if (unlockBtn) {
     unlockBtn.addEventListener("click", () => {
+
+        // 🎵 PLAY MUSIC
+      music.volume = 0.3; // romantic soft volume
+      music.play();
+
       // Fade out button
       unlockBtn.classList.add("opacity-0", "scale-90");
 
