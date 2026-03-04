@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     unlockBtn.addEventListener("click", () => {
 
         // 🎵 PLAY MUSIC
-      music.volume = 0.3; // romantic soft volume
+      music.volume = 0.4; // romantic soft volume
       music.play();
 
       // Fade out button
